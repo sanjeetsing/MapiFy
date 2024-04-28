@@ -1,0 +1,354 @@
+/* Dashboard.css */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+    background-image: url("./Image/image3.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 0; /* Ensure the background image starts from the top */
+    left: 0; /* Ensure the background image starts from the left */
+    width: 100%; /* Cover the entire width of the viewport */
+    height: 100%; /* Cover the entire height of the viewport */
+    z-index: -1; /* Place the background image behind other content */
+  }
+  
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #0d0e0f6d; /* Add border */
+   /* background-color: #f2f2f2; /* Add background color */
+   background-image: url("./Image/image4.jpg");
+   background-size: cover;
+    padding: 10px 20px; /* Add padding */
+    height: 50px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    padding-left: 150px;
+    font-size: 40px;
+    font-family:sans-serif;
+
+  text-align: center; /* Center align the text */
+  flex-grow: 1;
+  }
+  
+  .header-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-button:hover {
+    background-color: #b66ea5;
+  }
+
+  .search-box {
+    display: flex;
+    padding-right: 15px;
+  }
+  
+  .search-box input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 8px 15px;
+    background-color: #070b10;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #91c787;
+  }
+
+  .clear-search-button {
+    padding: 8px 16px;
+    margin-left: 8px;
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  
+  
+  .section h2 {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-size: 27px;
+    
+  }
+  
+  .profile {
+    display: flex;
+    
+    background-color: #f2f2f2;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allow the profile info to grow */
+    gap: 30px; /* Add space between children */
+  }
+
+  .profile-info p1 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+  
+
+  .profile-info p2 {
+    font-size: medium;
+  }
+  
+  .profile-photo {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%; /* Circular shape */
+    margin-right: 20px;
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the container */
+  }
+  
+  .default-pic {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .button-group {
+    margin-left: auto;
+    
+  }
+  
+  .button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #da64d4;
+    color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+
+  .button:last-child {
+    margin-right: 0;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  .dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dialog {
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  
+  
+  .dialog h2 {
+    margin-top: 0
+  }
+
+/* MapComponent.css */
+.map-container {
+    position: relative;
+    height: 400px; /* Adjust height as needed */
+    width: 100%;
+  }
+  
+  .map {
+    height: auto;
+    width: auto;
+    display: contents;
+    border: 1px solid #ccc; /* Add a border for better visualization */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  }
+  
+  .marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+  /* Dashboard.css */
+
+/* Edit dialog overlay */
+.edit-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Edit dialog */
+  .edit-dialog {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-dialog h2 {
+    margin-top: 0;
+  }
+  
+  .edit-dialog input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit-dialog button {
+    padding: 8px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-dialog button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dialog {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  }
+  
+  .dialog h2 {
+    margin-top: 0;
+  }
+  
+  .dialog input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .dialog button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+  
+  .dialog button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .dialog button:last-child {
+    margin-right: 5px;
+    background-color: #f32e2e;
+    margin-top: 8px;
+    color: white;
+  }
+  
+  .dialog button:last-child:hover {
+    background-color: #b3b3b3; /* Darker shade on hover */
+  }
+  
+
+
+
