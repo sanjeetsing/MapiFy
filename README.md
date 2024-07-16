@@ -1,5 +1,4 @@
 
-Certainly! Here’s an example of how you might elaborate on your Mapify project for your GitHub repository’s README file. This includes a project description, features, installation instructions, usage, and more.
 ***   Mapify *****
 Project Description
 
